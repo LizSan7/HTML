@@ -31,12 +31,14 @@
         function varDate(){
             var tiempo = new Date();
             var hora = tiempo.getHours();
+            var minuto = tiempo.getMinutes();
+
             
             if (hora<12 && hora>0) {
-                alert("Guenos días...")
+                alert("Guenos días..., son las: "+hora+ ":" + minuto)
                 
             } else {
-                alert("Tardes ya...")
+                alert("Tardes ya... son las: "+hora+ ":" + minuto)
                 
             }
 
