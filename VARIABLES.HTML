@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables y Tipo de Datos </title>
+</head>
+<body>
+    <button onclick="varSimples()"> Variables Simples</button>
+    <button onclick="varString()"> Variables String</button>
+    <button onclick="varDate()"> Variables Date</button>
+
+
+</body>
+<script>
+    function varSimples(){
+        var x = 7;
+        var y = prompt("Numero a multiplicar");
+        var result = x*y;
+        alert("El resultado de la multiplicación es: "+ result)
+    }
+    function varString(){
+        var name = new String ();
+        name = prompt("Escribe la cadena");
+       // name = "Lizbeth";
+        alert("Tamaño de la Cadena: "+ name.length);
+        alert("El primer caracter es: "+ name.charAt(0));
+        alert("La cadena en mayusculas es: "+ name.toUpperCase());
+    }
+        function varDate(){
+            var tiempo = new Date();
+            var hora = tiempo.getHours();
+            
+            if (hora<12 && hora>0) {
+                alert("Guenos días...")
+                
+            } else {
+                alert("Tardes ya...")
+                
+            }
+
+        }
+    
+
+</script>
+</html>
