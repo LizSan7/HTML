@@ -27,8 +27,11 @@
     <div name="name-div"> Div 3 </div> <br>
 
     <button onclick="crearElemento()" id="botoncito"> Crear Nuevo Boton </button> 
-    <div id="contenedor">Holaaa</div>
+    <div id="contenedor">Holaaa</div><br>
 
+    <p id="nombre"> LIZBETH SANTIBAÑEZ CRUZ</p>
+    <button onclick="cambiarColor('blue')">AZUL</button>
+    <button onclick="cambiarColor('red')">ROJO</button>
 </body>
 <script>
     //GET ELEMENTS BY
@@ -57,6 +60,12 @@
 function modificarBoton(){
     var findBoton = document.getElementById("botoncito");
     findBoton.innerHTML ="HOLA MUNDO XD"
+}
+/////////////////////////////////////////////////////////////
+function cambiarColor(color){
+    var findNombre = document.getElementById("nombre");
+    findNombre.style.color= color 
+
 }
 </script>
 </html>
