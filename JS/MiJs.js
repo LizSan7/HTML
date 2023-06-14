@@ -61,3 +61,20 @@ function declararObj(){
     let numeros2 = [...numeros,7,8,9]
     console.log(numeros2);
  }
+ function tradicional(){
+    console.log("Hola Tradicional")
+    console.log("Adios Tradicional")
+ }
+ tradicional();
+
+ let tradicional2 = ()=> {
+    console.log("Hola Tradicional2");
+    console.log("Adios Tradicional2");
+ }
+ tradicional2();
+
+ function x(a,b,d){
+    console.log(a+b+d);
+ }
+
+ let x2=(a,b,d)=> console.log(a+b+d);
