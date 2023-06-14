@@ -65,7 +65,20 @@ function modificarBoton(){
 function cambiarColor(color){
     var findNombre = document.getElementById("nombre");
     findNombre.style.color= color 
-
 }
+function cambiarUno(){
+        alert('Cambiar uno...')
+    }
+    function cambiarDos(){
+        alert('Cambiar dos...')
+    }
+
+    var  tablita = document.getElementById("tabla");
+    tablita.addEventListener("click", modificarTexto, false);
+
+    function modificarTexto(){
+        var tablita2 = document.getElementById("tabla2");
+        tablita2.firstChild.nodeValue = "WEB"
+    }
 </script>
 </html>
