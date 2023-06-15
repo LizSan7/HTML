@@ -78,3 +78,53 @@ function declararObj(){
  }
 
  let x2=(a,b,d)=> console.log(a+b+d);
+
+ ///////////////////// ASYNC /////////////////////////////////////
+
+ const peliculas =[
+    {
+        id:1,
+        nombre:"Yo antes de ti",
+        duracion: 120,
+        genero:"Romantica",
+        descripcion:"Está en silla de ruedas"
+    },
+    {
+        id:2,
+        nombre:"Sherk",
+        duracion: 120,
+        genero:"Animada",
+        descripcion:"Tiene capas"
+    },
+    {
+        id:3,
+        nombre:"Moana",
+        duracion: 90,
+        genero:"Animada",
+        descripcion:"Hay un gallo loco"
+    },
+    {
+        id:4,
+        nombre:"Harry Potter",
+        duracion: 150,
+        genero:"Fantasia",
+        descripcion:"Le mataron a sus jefes :("
+    }
+ ]
+
+const obtenerPeliculas = ()=> {
+return new Promise((resolve, reject)=>{
+setTimeout(()=> {
+resolve(peliculas);
+ }, 3000);
+ });
+};
+
+ //const obtenerPeliculas = () => peliculas;
+//obtenerPeliculas().then((peliculas)=>console.log(peliculas))
+
+async function listarpelis(){
+    const lista= await obtenerPeliculas();
+    console.log(lista);
+}
+listarpelis();
